@@ -1,0 +1,29 @@
+/* style from bootstrap - fonts & icons from font-awesome */
+@import "~font-awesome/css/font-awesome.min.css";
+body {
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #f8f9fa;
+}
+
+.brand {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-size: 1.25rem;
+}
