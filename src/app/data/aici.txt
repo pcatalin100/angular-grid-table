@@ -1,5 +1,4 @@
-<div class="divTable">
-  <div class="divHeader">
+ <div class="divHeader">
     <div class="divRow">
       <div class="divCell">Id Header</div>
       <div class="divCell">Ceva Header</div>
@@ -47,7 +46,3 @@
       <div class="divCell">{{ person.greeting }}</div>
       <div class="divCell">{{ person.favoriteFruit }}</div>
     </div>
-
-    <div class="divFooter"></div>
-  </div>
-</div>

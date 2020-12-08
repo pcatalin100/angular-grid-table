@@ -1,26 +1,36 @@
-table {
-  border-collapse: collapse;
-}
-.table td,
-.table th {
-  background-color: #fff;
-}
-
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
+.divTable {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
   color: #212529;
 }
 
-.table td,
-.table th {
-  text-align: inherit;
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
+.divHeader {
+  background-color: #dee2e6;
+  color: #212529;
+  font-weight: bold;
+  height: 2.5rem;
 }
 
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+.divHeader .divRow .divCell {
+  line-height: 2rem;
+}
+
+.divRow {
+  display: block;
+  height: inherit;
+}
+.divBody .divRow {
+  border: 1px solid #dee2e6;
+}
+.divBody .divRow:hover {
+  background-color: #9fcdff47;
+}
+
+.divCell {
+  display: inline-block;
+  padding: 2px;
+  line-height: 1.5rem;
+  border: 1px solid #dee2e6;
+  width: 20%;
 }
