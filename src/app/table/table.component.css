@@ -1,23 +1,22 @@
 .divTable {
   display: block;
   overflow-x: auto;
-  white-space: nowrap;
   color: #212529;
 }
 
 .divHeader {
   background-color: #dee2e6;
-  color: #212529;
+  width: max-content;
   font-weight: bold;
-  height: 2.5rem;
 }
 
 .divHeader .divRow .divCell {
-  line-height: 2rem;
+  border: 1px solid white;
 }
-
+.divBody {
+  width: max-content;
+}
 .divRow {
-  display: block;
   height: inherit;
 }
 .divBody .divRow {
@@ -29,8 +28,7 @@
 
 .divCell {
   display: inline-block;
-  padding: 2px;
+  padding: 5px;
   line-height: 1.5rem;
   border: 1px solid #dee2e6;
-  width: 20%;
 }

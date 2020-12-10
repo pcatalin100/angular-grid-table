@@ -6,14 +6,14 @@ export interface PersonDetails {
   balance: string;
   age: number;
   eyeColor: string;
-  firstname: string;
-  lastname: string;
+  firstName: string;
+  lastName: string;
   company: string;
   email: string;
   phone: string;
   address: string;
   about: string;
-  regeistred: string;
+  registered: string;
   latitude: number;
   longitude: number;
   greeting: string;

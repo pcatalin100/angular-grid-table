@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { PersonDetails } from './person-details';
-import { tap } from 'rxjs/operators';
+import { tap, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -12,8 +12,10 @@ export class PersonService {
   constructor(private http: HttpClient) {}
 
   getPersonsDetails(): Observable<PersonDetails[]> {
-    return this.http
-      .get<PersonDetails[]>(this.url)
-      .pipe(tap((data) => console.log(data)));
+    return this.http.get<PersonDetails[]>(this.url).pipe(
+      tap((data) => {
+        console.log(data);
+      })
+    );
   }
 }
